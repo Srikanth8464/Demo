@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Toprectangle.qml</file>
+        <file>Bottomrectangle.qml</file>
+        <file>Redrectangle.qml</file>
+        <file>Bluerectangle.qml</file>
+        <file>Greenrectangle.qml</file>
+    </qresource>
+</RCC>
