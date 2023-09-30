@@ -51,6 +51,7 @@ Rectangle{
             }
         }
         Rectangle{
+            id: greenrec
             width: 100
             height: 30
             color: "gray"
@@ -66,11 +67,28 @@ Rectangle{
                 height: 20
                 anchors.centerIn: parent
             }
-            MouseArea{
-                anchors.fill: parent
-                onClicked: {
-                    console.log("greenclicked")
-                    updatestackview("qrc:/Greenrectangle.qml");
+            Rectangle{
+                width: 100
+                height: 30
+                color: "gray"
+                border.color: "black"
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.left: greenrec.left
+                anchors.leftMargin: 200
+                Text {
+                    id:redimage3
+                    text: qsTr("RED")
+                    color: "white"
+                    width: 50
+                    height: 20
+                    anchors.centerIn: parent
+                }
+                MouseArea{
+                    anchors.fill: parent
+                    onClicked: {
+                        console.log("greenclicked")
+                        updatestackview("qrc:/Greenrectangle.qml");
+                    }
                 }
             }
         }
